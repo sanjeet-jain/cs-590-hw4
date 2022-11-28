@@ -46,15 +46,15 @@ int main(int argc, char *argv[])
 	char *X;
 	char *Y;
 
-	// values used for question #4.
-	//  n=m=10;
-	//  X = "dcdcbacbbb";
-	//  Y = "acdccabdbb";
-
+	// comment the following block and uncomment the example block to solve question 4
 	random_generator::seed();
-
 	X = rg.random_string_m(n, 4);
 	Y = rg.random_string_m(m, 4);
+
+	// values used for question #4.
+	// n = m = 10;
+	// X = (char *)"dcdcbacbbb";
+	// Y = (char *)"acdccabdbb";
 
 	H = new int *[n + 1];
 	P = new char *[n + 1];
@@ -89,7 +89,7 @@ int main(int argc, char *argv[])
 
 	cout << "\nM(n,m) = " << H[n][m] << endl;
 
-	// lets print the arrays we just populated to view the results
+	// lets print the matrices we just populated to view the results
 	for (int i = 0; i <= n; i++)
 	{
 		for (int j = 0; j <= m; j++)
