@@ -51,10 +51,10 @@ int main(int argc, char *argv[])
 	X = rg.random_string_m(n, 4);
 	Y = rg.random_string_m(m, 4);
 
-	// values used for question #4.
+	// values used for question #4. X is the columns/query and Y is the rows/target
 	// n = m = 10;
-	// X = (char *)"dcdcbacbbb";
-	// Y = (char *)"acdccabdbb";
+	// Y = (char *)"dcdcbacbbb";
+	// X = (char *)"acdccabdbb";
 
 	H = new int *[n + 1];
 	P = new char *[n + 1];
@@ -90,22 +90,22 @@ int main(int argc, char *argv[])
 	cout << "\nM(n,m) = " << H[n][m] << endl;
 
 	// lets print the matrices we just populated to view the results
-	// for (int i = 0; i <= n; i++)
-	// {
-	// 	for (int j = 0; j <= m; j++)
-	// 	{
-	// 		cout << H[i][j] << ' ';
-	// 	}
-	// 	cout << endl;
-	// }
+	for (int i = 0; i <= n; i++)
+	{
+		for (int j = 0; j <= m; j++)
+		{
+			cout << H[i][j] << ' ';
+		}
+		cout << endl;
+	}
 
-	// for (int i = 0; i <= n; i++)
-	// {
-	// 	for (int j = 0; j <= m; j++)
-	// 	{
-	// 		cout << P[i][j] << ' ';
-	// 	}
-	// 	cout << endl;
-	// }
+	for (int i = 0; i <= n; i++)
+	{
+		for (int j = 0; j <= m; j++)
+		{
+			cout << P[i][j] << ' ';
+		}
+		cout << endl;
+	}
 	return 0;
 }
