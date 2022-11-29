@@ -51,10 +51,15 @@ int main(int argc, char *argv[])
 	X = rg.random_string_m(n, 4);
 	Y = rg.random_string_m(m, 4);
 
-	// values used for question #4. X is the columns/query and Y is the rows/target
+	// values used for question #4. X is the rows and Y is the columns
 	// n = m = 10;
-	// Y = (char *)"dcdcbacbbb";
-	// X = (char *)"acdccabdbb";
+	// X = (char *)"dcdcbacbbb";
+	// Y = (char *)"acdccabdbb";
+
+	// example done in class
+	// n = m = 8;
+	// X = (char *)"acbababa";
+	// Y = (char *)"abababda";
 
 	H = new int *[n + 1];
 	P = new char *[n + 1];
