@@ -90,22 +90,22 @@ int main(int argc, char *argv[])
 	cout << "\nM(n,m) = " << H[n][m] << endl;
 
 	// lets print the matrices we just populated to view the results
-	for (int i = 0; i <= n; i++)
-	{
-		for (int j = 0; j <= m; j++)
-		{
-			cout << H[i][j] << ' ';
-		}
-		cout << endl;
-	}
+	// for (int i = 0; i <= n; i++)
+	// {
+	// 	for (int j = 0; j <= m; j++)
+	// 	{
+	// 		cout << H[i][j] << ' ';
+	// 	}
+	// 	cout << endl;
+	// }
 
-	for (int i = 0; i <= n; i++)
-	{
-		for (int j = 0; j <= m; j++)
-		{
-			cout << P[i][j] << ' ';
-		}
-		cout << endl;
-	}
+	// for (int i = 0; i <= n; i++)
+	// {
+	// 	for (int j = 0; j <= m; j++)
+	// 	{
+	// 		cout << P[i][j] << ' ';
+	// 	}
+	// 	cout << endl;
+	// }
 	return 0;
 }
